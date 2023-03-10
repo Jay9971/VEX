@@ -83,6 +83,7 @@ void autonomous(void) {
 std::ifstream file("rerun.txt", std::ios::binary);
 if (!file) {
   auton();
+  return;
 } 
 //int size = 20000;
 //uint8_t data[size];
